@@ -54,6 +54,7 @@ img {
   margin: 0 auto;
   margin-top: 100px;
   position: relative;
+  user-select: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -120,7 +121,7 @@ img {
 .box__quote {
   margin-top: 15px;
   font-size: 0.9rem;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 }
 
 .box__quote-description {
