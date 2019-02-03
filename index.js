@@ -44,7 +44,7 @@ const colors = [
   '#b55400',
 ]
 
-document.body.addEventListener('click', (event) => {
+const changer = (event) => {
   if (!event.target.matches('a') && !event.target.matches('.box__quote')) {
     document.body.style = `background-color: ${colors[current]}`
     current++
@@ -52,4 +52,10 @@ document.body.addEventListener('click', (event) => {
       current = 0
     }
   }
-}, true)
+}
+
+const trigger = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  ? 'touchstart'
+  : 'click';
+
+document.body.addEventListener(trigger, changer, true)
