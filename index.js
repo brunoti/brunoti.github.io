@@ -26,4 +26,7 @@ container.addEventListener('click', () => {
   setQuote()
 })
 
-setTimeout(() => document.body.classList.add('glitching'), 5e3)
+setTimeout(() => {
+  document.body.classList.add('glitching')
+  document.title = 'B̷̻̎̾̋ŗ̶̥̚ů̸͇̜̈́͝n̷̨̠̹̊̚o̶̤̒ ̸̥͔͍́̾̚Ö̸̟̯͚́̓l̴̝͈͛ì̵̪͊̆v̵̡͉͂̏͠e̴̫̟͉̿̋̈́i̶̮̙̥̓̈́r̸͖̥̀a̶̧͍͑́̕ ̵͖̘̯̊-̸̨̯͕͌͒͆ ̵͔̲̆S̵͚͊̔̑ó̷̰̝f̵̼̐̈̚t̸̙͛̕ẁ̷̱a̴̤͖̎̚r̶̪̜̔͝ẻ̸͚͒̆ ̴̮̊́̑Ȇ̸̖̦́̚n̸͎̲̦̾ģ̴̮͙̋̾i̷͖̍̽n̸̲̖̾͋̍e̴͔͑e̵̛̛̖̋r̸̝̹̆͝'
+}, 5e3)
