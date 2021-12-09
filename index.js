@@ -26,36 +26,4 @@ container.addEventListener('click', () => {
   setQuote()
 })
 
-
-let current = 0
-const colors = [
-  '#65c6c4',
-  '#3c4f65',
-  '#834c69',
-  '#ffbe00',
-  '#f77754',
-  '#EEE',
-  '#40514e',
-  '#000',
-  '#c70039',
-  '#74b49b',
-  '#044343',
-  '#7d7d7d',
-  '#b55400',
-]
-
-const changer = (event) => {
-  if (!event.target.matches('a') && !event.target.matches('.box__quote')) {
-    document.body.style = `background-color: ${colors[current]}`
-    current++
-    if (current >= colors.length) {
-      current = 0
-    }
-  }
-}
-
-const trigger = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-  ? 'touchstart'
-  : 'click';
-
-document.body.addEventListener(trigger, changer, true)
+setTimeout(() => document.body.classList.add('glitching'), 5e3)
