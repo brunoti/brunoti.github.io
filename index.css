@@ -62,11 +62,15 @@ img {
   max-width: 100%;
 }
 
+.glitching .box {
+  width: 390px;
+}
+
 .box {
   border-radius: 5px;
   border: #EEE solid 2px;
   height: auto;
-  width: 400px;
+  width: 450px;
   padding: 20px;
   position: relative;
   user-select: none;
